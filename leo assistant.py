@@ -76,7 +76,7 @@ def listen_for_wake_word():
             try:
                 text = recognizer.recognize_google(recorded_audio, language='en_US')
                 text = text.lower()
-                if 'elisa' in text:
+                if 'no no' in text:
                     print('Wake word detected!')
                     speak('Hi Sir, How can I help you?')
                     return True
@@ -114,9 +114,9 @@ def cmd():
     elif 'who built you' in text:
         speak('Pranav')
     elif 'what is your name' in text:
-        speak('My name is elisa')
-    elif 'i love you elisa' in text:
-        speak('i love you too')
+        speak('My name is no no')
+    elif 'tell me a joke' in text:
+        speak('joke..ha..ha..ha..')
     elif 'who is your favourite actor' in text:
         speak('thalapathy vijay')
     elif 'ajith' in text:
